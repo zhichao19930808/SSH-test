@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>检测struts2环境</h1>
-<h2>启动tomcat，访问http://localhost:8080/good.action,检测struts2的0配置是否可用</h2>
+<h1>错误的操作</h1>
+<h2>未知的错误操作</h2>
 </body>
 </html>

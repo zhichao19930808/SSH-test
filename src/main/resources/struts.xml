@@ -16,9 +16,9 @@
 	<!-- 动态方法调用，默认false -->
 	<constant name="struts.enable.DynamicMethodInvocation" value="true"/>
 	<!-- 文件上传大小限制，默认值为2M（2097152） -->
-	<constant name="struts.multipart.maxSize" value="2097152000"></constant>
+	<constant name="struts.multipart.maxSize" value="2097152000"/>
 	<!-- 上传文件时的临时存储路径 -->
-	<constant name="struts.multipart.saveDir" value="/temp"></constant>
+	<constant name="struts.multipart.saveDir" value="/temp"/>
 	
 	
 	<package name="app-default" extends="struts-default">
@@ -27,9 +27,9 @@
 			<result name="error">/error.html</result>
 			<result name="404">/404.html</result>
 			<result name="500">/500.html</result>
-			<result name="login" type="redirect">/login!index.html</result>
-			<result name="register" type="redirect">/register.html</result>
-			<result name="home" type="redirect">/register.html</result>
+			<result name="login" type="redirect">/login.html</result>
+			<result name="signUp" type="redirect">/signUp.jsp</result>
+			<result name="home" type="redirect">/register.jsp</result>
 
 		</global-results>
 	</package>
