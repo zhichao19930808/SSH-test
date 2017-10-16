@@ -1,14 +1,10 @@
 package xin.zcglory.action;
 
 import com.opensymphony.xwork2.ModelDriven;
-import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import xin.zcglory.entity.User;
 import xin.zcglory.service.UserService;
-import xin.zcglory.utils.ApplicationContextUtil;
-import xin.zcglory.utils.MailUtil;
 
-import java.io.File;
 
 //所有的action都已经托管给Spring，所以才能在里面自动装配
 public class UserAction extends BaseAction implements ModelDriven<User>{
@@ -25,21 +21,7 @@ public class UserAction extends BaseAction implements ModelDriven<User>{
         userService.register(user);
         return null;
     }
-/*
-    public String sendmail() throws Exception {
 
-        ApplicationContextUtil.getContext().getBean(SessionFactory.class, "sessionFactory");
-
-        String a = request.getParameter("a");
-        String b = request.getParameter("b");
-        String c = request.getParameter("c");
-        File f = new File("C:\\Users\\Master.Xia\\Pictures\\0.gif");
-        MailUtil.send(a, b, c,f, true);
-
-        response.getWriter().print("success-send-mail");
-        return null;
-    }
-*/
     @Override
     public User getModel() {
         return user;
